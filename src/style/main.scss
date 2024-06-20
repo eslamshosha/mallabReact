@@ -1,0 +1,24 @@
+// // Abstracts
+@import "sass/abstracts/variables";
+@import "sass/abstracts/mixins";
+@import "../style/sass/base/fonts";
+
+// // Base
+@import "sass/base/base";
+
+// //Components
+
+// //Layout
+@import "sass/components/header";
+@import "sass/components/index";
+@import "sass/components/footer";
+@import "sass/components/sign-pages";
+@import "sass/components/single-page";
+@import "sass/components/account";
+@import "sass/components/store";
+@import "sass/components/product";
+@import "sass/components/cart";
+@import "sass/components/checkout";
+@import "sass/components/filter";
+@import "sass/components/video";
+@import "sass/components/newStyles";
