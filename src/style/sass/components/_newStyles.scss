@@ -220,7 +220,7 @@ body {
     }
     }
     .swiper-slide-thumb-active {
-      .productImg {
+      .thumpImg {
         border: 1px solid $hover;
       }
     }
@@ -236,10 +236,11 @@ body {
     justify-content: center;
     transition: all 0.3s ease-in-out;
     background-color: #f5f5f5;
+    border-radius: 10px;
+    border: 2px solid transparent;
   }
   .Thumbs-imgContainer {
     padding: 18px;
-    border: 2px solid transparent;
     border-radius: 10px;
     display: flex;
     align-items: center;

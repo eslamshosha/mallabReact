@@ -40,22 +40,6 @@ export default function ProductContent() {
   const [count, setCount] = useState(1);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-  const [swiperDir, setswiperDir] = useState("horizontal");
-
-  //choose the screen size
-  const handleResize = () => {
-    if (window.innerWidth < 767) {
-      setswiperDir("horizontal");
-    } else {
-      setswiperDir("vertical");
-    }
-  };
-
-  // create an event listener
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize, false);
-  });
   return (
     <section className="content-section single-content productCont">
       <div className="container ">
@@ -77,7 +61,7 @@ export default function ProductContent() {
                   slideToClickedSlide={true}
                   watchSlidesProgress
                   onSwiper={setThumbsSwiper}
-                  direction={swiperDir}
+                  direction={window.innerWidth < 767?"horizontal":"vertical"}
                   //   breakpoints={{
                   //     992: { direction: "vertical" },
                   //     767: { direction: "vertical" },
