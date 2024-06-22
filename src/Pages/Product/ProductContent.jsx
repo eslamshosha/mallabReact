@@ -61,16 +61,9 @@ export default function ProductContent() {
                   slideToClickedSlide={true}
                   watchSlidesProgress
                   onSwiper={setThumbsSwiper}
-                  direction={window.innerWidth < 767?"horizontal":"vertical"}
-                  //   breakpoints={{
-                  //     992: { direction: "vertical" },
-                  //     767: { direction: "vertical" },
-
-                  //     100: {
-                  //       direction: "horizontal",
-                  //       autoHeight: false,
-                  //     },
-                  //   }}
+                  direction={
+                    window.innerWidth < 767 ? "horizontal" : "vertical"
+                  }
                 >
                   {offers.map((slid) => (
                     <SwiperSlide>

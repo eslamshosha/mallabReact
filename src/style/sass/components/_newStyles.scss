@@ -190,6 +190,9 @@ body {
     padding: 5px;
   }
 }
+.video-cont .swiper-pagination {
+  bottom: 0 !important;
+}
 
 // .single-qty-control.qty-minus{
 //     border-radius: 66px 0px 0px 66px;
@@ -206,18 +209,18 @@ body {
 
 .productCont {
   .thumbs-product-slider {
-    .swiper{
-        height: 100%;
-        touch-action: pan-y;
-        @include max-767{
-            width: 100%;
-        }
+    .swiper {
+      height: 100%;
+      touch-action: pan-y;
+      @include max-767 {
+        width: 100%;
+      }
     }
     .swiper-slide {
       height: auto !important;
-      @include max-767{
+      @include max-767 {
         width: 100% auto !important;
-    }
+      }
     }
     .swiper-slide-thumb-active {
       .thumpImg {

@@ -12,6 +12,9 @@
   box-shadow: 0px 4px 40px 0px #00000014;
   background-color: $white;
   padding: 40px 32px;
+  @include max-991 {
+    padding: 40px 20px;
+  }
 }
 .add-address-cont {
   display: grid;
@@ -50,6 +53,12 @@
   }
   @include min-1440 {
     font-size: 18px;
+  }
+  @include max-991 {
+    font-size: 14px;
+    i {
+      font-size: 18px;
+    }
   }
 }
 .checkout-input {

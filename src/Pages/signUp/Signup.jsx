@@ -18,7 +18,7 @@ export default function Signup() {
               <h2 className="form-head">اهلا بيك انشآ حساب</h2>
               <div className="register-ancor">
                 <span className="register-span">لديك حساب بالفعل؟ </span>
-                <a href="login.html" className="register-btn"> تسجيل دخول</a>
+                <a href="login" className="register-btn"> تسجيل دخول</a>
               </div>
               <div className="form-group">
                 <label className="form-label">اسمك</label>

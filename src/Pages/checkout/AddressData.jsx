@@ -63,7 +63,7 @@ export default function AddressData() {
                                         icon-name="chevron-down"
                                     ></i>
 
-                                    <select className="select_input select2-city" name="city">
+                                    <select className="select_input custom-input" name="city">
                                         <option value="two">الرياض</option>
                                         <option value="three">المدينة</option>
                                     </select>

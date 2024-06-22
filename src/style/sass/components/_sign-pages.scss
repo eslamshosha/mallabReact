@@ -135,19 +135,26 @@
   gap: 8px;
 }
 select {
-  background-color: $back;
-  border: 2px solid $back;
+  background-color: var(--white-color);
+  border: 1px solid #e6e8ec;
   height: 48px;
   width: 100%;
-  padding: 0 50px;
-  border-radius: 24px;
+  padding: 0 20px;
+  border-radius: 5px;
   text-align: start;
-  color: $text;
-  font-size: 14px;
+  color: var(--black-color);
+  font-size: 16px;
   font-weight: 400;
   margin-bottom: 0;
+  outline: none !important;
+  transition: all 0.3s ease-in-out;
+  caret-color: var(--main-color);
   @include tr;
   caret-color: $main;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
 }
 // .form-input[type="tel"],
 .form-input[type="email"] {
@@ -800,7 +807,7 @@ html[dir="ltr"] .return-link i {
 .select2-container--default .select2-selection--single {
   border: 1px solid transparent;
   border-radius: 4px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 .select2-container--default .select2-selection--single:focus {
   border-color: $hover !important;
@@ -978,7 +985,7 @@ html[dir="ltr"] .return-link i {
   .full-grid {
     grid-column: 1 / span 1;
   }
-  .check-label {
-    margin-bottom: 15px;
-  }
+  // .check-label {
+  //   margin-bottom: 15px;
+  // }
 }
